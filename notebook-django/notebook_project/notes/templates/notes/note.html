@@ -1,0 +1,12 @@
+{% extends 'notes/base.html' %}
+
+{% block content %}
+<h1> This is note page </h1>
+{% for entry in entries %}
+<ul>
+    <li>
+        <p>{{entry}}</p>
+    </li>
+</ul>
+    {% endfor %}
+{% endblock content %}

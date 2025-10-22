@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{% block content %}
+
+    <h1>This is home page</h1>
+    {% comment %} <img src="static/Copy of 12.JPG" alt="">
+    <img src="static/IMG_20241024_204933.jpg" alt="Mahadi">
+    <img src="static/IMG-20230712-WA0000.jpg" alt="Abbu"> {% endcomment %}
+
+    <img src="{% static 'sample_img.JPG' %}" alt="here is image sample">
+
+{% endblock %}
