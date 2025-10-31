@@ -2,8 +2,8 @@ from django.shortcuts import render
 
 # Create your views here.
 mynotes =[{'id':1,'title':'First Note ','Entries':['Entry 1.1','Entry 1.2','Entry 1.2']},
-          {'id':2,'title':'Second Note','Entires:':['Entry 2.1','Entry 2.2','Entry 2.3']},
-          {'id':2,'title':'Second Note','Entires:':['Entry 3.1','Entry 3.2','Entry 3.3']},
+          {'id':2,'title':'Second Note','Entires':['Entry 2.1','Entry 2.2','Entry 2.3']},
+          {'id':2,'title':'Second Note','Entires':['Entry 3.1','Entry 3.2','Entry 3.3']},
           ]
 
 def home(request):
