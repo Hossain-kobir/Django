@@ -1,0 +1,34 @@
+{% extends "Base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+    <div class="container"> 
+    <div class="row">
+    {% for meal in meals %}
+
+        
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+            <img src="{{meal.strMealThumb}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{meal.strMeal}}</h5>
+              <p class="card-text">Meal ID</p>
+              <a href="#" class="btn btn-primary">{{meal.idMeal}}</a>
+            </div>
+          </div> 
+        </div>
+    {% endfor %}
+  </div>
+  
+</div>
+    
+
+    {% endblock body %}
+</body>
+</html>
