@@ -1,0 +1,75 @@
+{% comment %} {% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> {% endcomment %}
+{% comment %} <body>
+    {% block body %}
+    
+    {% for data in data_key.categories%}
+        
+    <table class="table">
+      <tbody>
+        <tr>
+          {% comment %} <th scope="row">3</th> {% endcomment %}
+          {% comment %} <td><ul>
+            <li>
+                <div class="card" style="width: 18rem;">
+                <img src="{{data.strCategoryThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.strCategory}}</h5>
+                    <p class="card-text">{{data.strCategoryDescription}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div> 
+            </li>
+        </ul></td>
+          <td><ul>
+            <li>
+                <div class="card" style="width: 18rem;">
+                <img src="{{data.strCategoryThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.strCategory}}</h5>
+                    <p class="card-text">{{data.strCategoryDescription}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div> 
+            </li>
+        </ul></td>
+          <td><ul>
+            <li>
+                <div class="card" style="width: 18rem;">
+                <img src="{{data.strCategoryThumb}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.strCategory}}</h5>
+                    <p class="card-text">{{data.strCategoryDescription}}</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div> 
+            </li>
+        </ul></td>
+        </tr>
+      </tbody>
+    </table>
+    
+    {% endfor %}
+    {% endblock body %} {% endcomment %}
+    
+{% comment %} 
+</div>
+</body>
+</html> {% endcomment %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>This is Templates Checking </h1>
+</body>
+</html>
