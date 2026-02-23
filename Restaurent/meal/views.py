@@ -45,4 +45,4 @@ data = {
 contex = {'data_key' : data}
 
 def home(request):
-    return render(request,'../templates/index.html',contex)
+    return render(request,'../templates/meal/index.html',contex)

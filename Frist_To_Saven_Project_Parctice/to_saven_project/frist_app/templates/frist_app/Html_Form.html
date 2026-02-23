@@ -1,0 +1,25 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+
+<form action="/submit/About/" style="width: 50%; margin: auto;" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+    <div class="mb-3">
+    <label for="exampleInputName" class="form-label">Name</label>
+    <input type="text" class="form-control" id="exampleInputName" aria-describedby="NameHelp" name="username">
+    <div id="NameHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+    <div id="emailHelp" class="form-text"></div>
+  </div>
+  <div class="mb-3">
+  <label for="formFile" class="form-label">Uplod Photos</label>
+  <input class="form-control" type="file" id="formFile" name="file">
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+{% endblock %}

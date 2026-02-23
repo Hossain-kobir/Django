@@ -2,7 +2,7 @@ from django import forms
 from django.core import validators
 
 class Contact_form(forms.Form):
-    name = forms.CharField(label ="User name",help_text="Please Write Your Full Name",required= False ,disabled=True,widget=forms.Textarea(attrs = {"placeholder":"Enter Your Name"}))
+    name = forms.CharField(label ="User name",help_text="Please Write Your Full Name",required= False ,disabled=False,widget=forms.Textarea(attrs = {"placeholder":"Enter Your Name"}))
     email = forms.EmailField(label ="User email")
     # file = forms.FileField()
     # age = forms.IntegerField()
@@ -55,7 +55,7 @@ class Student_data(forms.Form):
             name = forms.CharField(widget= forms.TextInput,validators=[check_name])
             email = forms.EmailField(validators=[validators.EmailValidator(message=('check validation email'))])
             age = forms.IntegerField(validators=[validators.MinValueValidator(20,message=('minmum value at least 20')),validators.MaxValueValidator(1000,message=('do not give value 1000'))])
-            file = forms.FileField(validators=[validators.FileExtensionValidator(allowed_extensions=['pdf'],message='only pdf file allowed')])
+            file = forms.FileField(validators=[validators.FileExtensionValidator(allowed_extensions=['pdf'],message=('only pdf file allowed'))])
 
 class Password_Validation_Project(forms.Form):
     name = forms.CharField(label=('Full Name'))

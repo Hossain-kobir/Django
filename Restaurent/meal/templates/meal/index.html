@@ -1,12 +1,12 @@
-{% comment %} {% extends 'base.html'%}
+ {% extends 'base.html'%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head> {% endcomment %}
-{% comment %} <body>
+</head> 
+<body>
     {% block body %}
     
     {% for data in data_key.categories%}
@@ -14,8 +14,8 @@
     <table class="table">
       <tbody>
         <tr>
-          {% comment %} <th scope="row">3</th> {% endcomment %}
-          {% comment %} <td><ul>
+          <th scope="row">3</th> 
+           <td><ul>
             <li>
                 <div class="card" style="width: 18rem;">
                 <img src="{{data.strCategoryThumb}}" class="card-img-top" alt="...">
@@ -56,20 +56,10 @@
     </table>
     
     {% endfor %}
-    {% endblock body %} {% endcomment %}
+    {% endblock body %} 
     
-{% comment %} 
+
 </div>
 </body>
-</html> {% endcomment %} 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>This is Templates Checking </h1>
-</body>
-</html>
+</html> 
+
